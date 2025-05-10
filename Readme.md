@@ -1,4 +1,4 @@
-To master PostgreSQL, here are the most relevant and impactful topics to focus on:
+# PostgreSQL
 
 ---
 
@@ -57,4 +57,4 @@ To master PostgreSQL, here are the most relevant and impactful topics to focus o
 
 ---
 
-These topics cover the core skills needed to master PostgreSQL and make high-impact decisions in production systems to design scalable, reliable, and high-performing databases for complex applications.
+to design scalable, reliable, and high-performing databases for complex applications.
