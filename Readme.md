@@ -1,7 +1,5 @@
 # PostgreSQL
 
----
-
 ## 1. **PostgreSQL Data Types & Schema Design**
 
 - **Understanding Complex Data Types:** JSON, JSONB, Arrays, and HSTORE.
