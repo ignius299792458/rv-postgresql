@@ -8,14 +8,14 @@ the part of SQL responsible for **defining and managing database structures**.
 
 **DDL (Data Definition Language)** consists of SQL commands used to **define, modify, and remove database schema objects**, such as:
 
-- Tables
-- Views
-- Indexes
-- Schemas
-- Users/Roles
-- Constraints
+- `Tables`
+- `Views`
+- `Indexes`
+- `Schemas`
+- `Users`/`Roles`
+- `Constraints`
 
-> ❗ DDL commands **auto-commit** — changes are immediately permanent.
+> ### ❗ DDL commands **`auto-commit`** — changes are immediately permanent.
 
 ---
 
