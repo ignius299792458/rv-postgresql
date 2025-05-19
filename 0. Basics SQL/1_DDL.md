@@ -1,12 +1,10 @@
 # Data Definition Language (DDL)
 
-the part of SQL responsible for **defining and managing database structures**.
-
----
+the part of SQL responsible for **`defining and managing database structures`**.
 
 ## 🧠 What is DDL?
 
-**DDL (Data Definition Language)** consists of SQL commands used to **define, modify, and remove database schema objects**, such as:
+**DDL (`Data Definition Language`)** consists of SQL commands used to **define, modify, and remove database schema objects**, such as:
 
 - `Tables`
 - `Views`

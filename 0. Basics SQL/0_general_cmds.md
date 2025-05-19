@@ -104,6 +104,92 @@ These commands allow you to manage PostgreSQL users and sessions entirely from t
 - `\dFp` - List text search parsers
 - `\dFt` - List text search templates
 
+# **Getting Columns of a Table in PostgreSQL**
+
+## **1. Using Meta-Commands (psql)**
+
+### **List All Columns of a Table**
+
+```sql
+\d table_name
+```
+
+Example:
+
+```sql
+\d employees
+```
+
+**Output:**
+
+```
+                          Table "public.employees"
+   Column   |         Type          | Collation | Nullable | Default
+------------+-----------------------+-----------+----------+---------
+ id         | integer               |           | not null |
+ name       | character varying(50) |           | not null |
+ salary     | numeric(10,2)         |           |          |
+ hire_date  | date                  |           |          |
+Indexes:
+    "employees_pkey" PRIMARY KEY, btree (id)
+```
+
+### **Get More Detailed Column Info**
+
+```sql
+\d+ table_name
+```
+
+Example:
+
+```sql
+\d+ employees
+```
+
+**Output:** _(Includes storage, compression, and description)_
+
+---
+
+# **Using SQL Queries**
+
+### **Method 1: `information_schema.columns` (Standard SQL)**
+
+```sql
+SELECT column_name, data_type, is_nullable, column_default
+FROM information_schema.columns
+WHERE table_name = 'table_name';
+```
+
+Example:
+
+```sql
+SELECT column_name, data_type, is_nullable, column_default
+FROM information_schema.columns
+WHERE table_name = 'employees';
+```
+
+**Output:**
+
+```
+ column_name |     data_type      | is_nullable | column_default
+-------------+--------------------+-------------+----------------
+ id          | integer            | NO          |
+ name        | character varying  | NO          |
+ salary      | numeric            | YES         |
+ hire_date   | date               | YES         |
+```
+
+### **Method 3: `SELECT * FROM table LIMIT 0` (Quick Hack)**
+
+Example:
+
+```sql
+SELECT * FROM employees LIMIT 0;
+```
+
+**Output:** _(Shows column names but no data)_
+**Quick Hack** | `SELECT * FROM table_name LIMIT 0;` | Fast column name check |
+
 # Formatting Commands
 
 - `\a` - Toggle between unaligned and aligned output mode
