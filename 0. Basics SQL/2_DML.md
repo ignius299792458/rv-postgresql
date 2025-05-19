@@ -2,7 +2,7 @@
 
 ## 🧠 What is DML?
 
-**Data Manipulation Language (DML)** is the subset of SQL used to **manipulate data** stored in relational database tables. It does **not** define the structure of the tables (that's DDL), but rather **operates on the data inside the structure**.
+**Data Manipulation Language (DML)** is the subset of SQL used to **`manipulate data`** stored in relational database tables. It does **not** define the structure of the tables (that's DDL), but rather **operates on the data inside the structure**.
 
 ### ✅ DML Commands:
 

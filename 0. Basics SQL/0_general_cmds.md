@@ -1,5 +1,18 @@
 Comprehensive list of PostgreSQL's meta-commands (backslash commands)
 
+# get help
+
+```sh
+\? # get help and details
+```
+
+`Help`
+
+- `\? [commands]` show help on backslash commands
+- `\? options` show help on psql command-line options
+- `\? variables` show help on special variables
+- `\h [NAME]` help on syntax of SQL commands, \* for all commands
+
 # **User and DB based cmds**
 
 | Action                 | Command                                           |
